@@ -1,0 +1,50 @@
+.color-red {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.color-blue {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+}
+.color-green {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-bottom: 3px;
+}
+
+.parent > * {
+    flex-basis: 0px;
+    flex-grow: 1;
+    order: 2;
+}
+
+.parent .color-bluebig {
+    flex-grow: 2;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.color-greenfirst {
+    order: 1;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

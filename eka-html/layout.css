@@ -1,0 +1,58 @@
+/* mobile first */
+
+html {
+    font-size: 62.5%; /* 16px * 62.5% = 10px */
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    
+    padding: 1rem;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+p {
+    font-size: 1.3rem;
+}
+/*Määritellään responsiivinen kuva */
+figure { /*reset.css:ssä määritelty display:block */
+
+}
+figure img {
+
+    max-width: 100%;
+
+}
+
+/* Lisätään sivun pääelementtien väliin tilaa 10px 
+h1, p, figure  {
+    margin-bottom: 1rem;
+}
+*/
+ body > * { /*body-elementin välittömät lapset, * = mikä vain tag */
+    margin-bottom: 1rem;
+
+ }
+/* logot figure-tageissa allekkain */
+ .parent {}
+
+ .parent > * { /* .parent-elementin välittömät lapset*/
+
+ }
+/* mobiilia suuremmat näytöt */
+ @media only screen and (min-width: 426px) {
+     /* logot figure-tageissa rinnakkain, kun mobiilia isompi ruutu (425pv developer consolessa suuren mobiiliruudun raja) */
+    .parent {
+        display: flex;  /* flex käyttöön parent-elementin lapsille */
+        flex-direction: row; /* .parent-elementin lapset rinnakkain*/
+        flex-wrap: nowrap; /* .parent-elementin lapset pysyvät yhdellä rivillä */
+    }
+
+    .parent > * { /* .parent-elementin välittömät lapset*/
+        flex-grow: 1;  /* lapset yhtä leveitä */
+        flex-basis: 0; /* lapsien minimileveys. Huom: Lapsien yhtä leveys tulee voimaan vasta kun flex-basis on määritelty*/
+
+    }
+
+ }
