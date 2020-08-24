@@ -45,13 +45,13 @@ article > * {
 }
 .sisennys-6rem {
     padding-left: 6rem;
-    margin-bottom: 1rem;
+  
     list-style: decimal;
 }
 
 .sisennys-6rem > * {
     color: #69013B;
-    margin-bottom: 1rem;
+ /*  margin-bottom: 1rem; */
 }
 h1 {
     
@@ -125,4 +125,8 @@ a:hover {
 
 .darker > * {
     margin-bottom: 10px;
+}
+
+ol li {
+    margin-bottom: 1rem;
 }
