@@ -100,9 +100,14 @@ footer {
         flex-direction: row;
 
     }
-    aside {
+    .aside-1 {
         flex-basis: auto; /*asidet ottavat niin paljon tilaa kuin saatavilla*/
     }
+    .aside-2 {
+        flex-basis: auto; /*asidet ottavat niin paljon tilaa kuin saatavilla*/
+    }
+
+  
 }
 /*Lisäsäännöt desktop-näkymää varten:*/
 @media only screen and (min-width: 769px) { /*desktop-näkymä*/
