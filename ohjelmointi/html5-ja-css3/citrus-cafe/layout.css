@@ -1,0 +1,276 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #84C15B; 
+    
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#logo {
+    display: block;
+    max-width: 100%;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+.some {
+    color: white;
+
+}
+
+#nav-bar {
+    list-style: none;
+   
+}
+
+#nav-bar ol {
+    display: block;
+    
+}
+
+ol li {
+    background-color:  #9DCD7C;
+    color: white;
+    font-size: 1.5rem;
+    border: #6D9A4D solid 1px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 7px;
+    max-width: 100%;
+}
+
+
+
+#vision section {
+    color: black;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+#vision figure {
+    display:none;
+}
+
+
+
+#boxes {
+    background-color: white;
+    
+}
+
+#boxes h1 {
+    background-color: #CBCBCB;
+    margin: 0.5rem;
+    padding: 0.8rem;
+}
+
+#boxes figure {
+    margin: 0.5rem;
+    padding: 0;
+}
+
+#today {
+    
+    border-top: solid white 0.5rem;
+}
+
+.some {
+    float: right;
+    display: flex;
+}
+
+.some > * {
+    flex-direction: row;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+#black {
+    color: black;
+}
+
+.contact-info > * {
+    color: white;
+    font-size: 1rem;
+
+}
+ footer {
+     padding: 0.5rem;
+ }
+
+
+.ohjelmisto {
+    margin-left: 0.5rem;
+}
+
+.ohjelmisto th {
+    width: 50px;
+    font-weight: bold;
+    text-align: left;
+}
+
+table {
+    display: table;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+    border-bottom: solid white 0.5rem;
+}
+
+.greater {
+    float: right;
+}
+
+@media only screen and (min-width: 426px) {
+    #vision {
+        background-image: url(./images/gray-sand.png);
+    
+        position: top left;
+        background-repeat: repeat-x repeat-y;
+        background-color: /*#f7f29#f4ec8b; */ #f9f2ac;
+    }
+
+    #nav-bar ol {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        list-style: none;
+    }
+
+    ol li {
+        flex-basis: 0px;
+        flex-grow: 1;
+    }
+
+    #vision {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        border: solid white 0.5rem;
+        border-bottom: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #vision figure {
+        max-width: 1000px;
+        order: 2;
+        flex-basis: 0px;
+        flex-grow: 1;
+        display: block;
+    }
+
+    #vision section {
+        order: 1;
+        flex-basis: 0px;
+        flex-grow: 2;
+        vertical-align: middle;
+        
+    }
+    
+
+    #boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #boxes #specials {
+        flex-basis: 0px;
+        flex-grow: 1;
+    }
+
+    #boxes #events {
+        flex-basis: 0px;
+        flex-grow: 1;
+
+    }
+
+    #today {
+        border-top: none;
+    }
+
+    #news {
+        flex-basis: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+    #vision {
+        background-image: url(./images/gray-sand.png);
+    
+        position: top left;
+        background-repeat: repeat-x repeat-y;
+        background-color: wheat; 
+    }
+
+    #nav-bar ol {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        list-style: none;
+    }
+
+    ol li {
+        flex-basis: 0px;
+        flex-grow: 1;
+    }
+
+    #vision {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        border: solid white 0.5rem;
+        border-bottom: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #vision figure {
+        max-width: 1000px;
+        order: 2;
+        flex-basis: 0px;
+        flex-grow: 1;
+        display: block;
+    }
+
+    #vision section {
+        order: 1;
+        flex-basis: 0px;
+        flex-grow: 2;
+        vertical-align: middle;
+        
+    }
+    
+
+    #boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #boxes #specials {
+        flex-basis: 0px;
+        flex-grow: 1;
+    }
+
+    #boxes #events {
+        flex-basis: 0px;
+        flex-grow: 1;
+
+    }
+
+    #today {
+        border-top: none;
+    }
+
+    #news {
+        flex-basis: 0px;
+        flex-grow: 1;
+    }
+    
+}

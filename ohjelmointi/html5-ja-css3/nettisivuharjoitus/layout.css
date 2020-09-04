@@ -1,0 +1,194 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #FAF4EC;
+    font-family: "Korinna BT", Century, Arial, Helvetica, sans-serif;
+}
+
+#special {
+    background-image: url(./images/special-bg.png);
+    background-position: left bottom;
+    background-repeat: repeat-x; 
+  
+    background-color: #3DA2C4;
+    padding: 1rem;
+    color: white;
+}
+
+#special a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+nav ol {
+    display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+list-style: none;
+justify-content: center;
+align-items: center;
+
+}
+
+.bold {
+    text-emphasis: bold;
+}
+
+
+aside ol {
+    columns: 2;
+    border-bottom: solid #F4E6C2 1px;
+}
+
+
+ol li, ol figure {
+    flex-basis: 0px;
+    flex-grow: 1;
+
+}
+
+nav a {
+    text-decoration: none; 
+    color: black;
+}
+
+
+
+a {
+    color: #3DA2C4;
+}
+
+#wrapper {
+    background-image: url(./images/grunge.png);
+    background-repeat: no-repeat;
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#wrapper > * {
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#main {
+    flex-basis: 60%;
+}
+
+#main > * {
+    padding: 1rem;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+#sidebar {
+    flex-basis: 40%;
+}
+
+#sidebar > * {
+    padding: 1rem;
+}
+
+.all-caps {
+    text-transform: uppercase;
+}
+
+.callout {
+    background-color: #F4E6C2;
+    border-radius: 7px;
+    font-weight: bold;
+    }
+
+footer  {
+    color: #C8C3BE;
+    justify-content: center;
+align-items: center;
+}
+
+footer > * {
+    text-align: center;
+}
+
+footer figure img {
+    opacity: 0.3;
+    max-width: 4rem;    
+    padding: 1rem;
+}
+
+@media screen and (min-width: 551px) and (max-width: 800px) {
+
+    .small-screen-disappear {
+        display: none;
+    }
+    #wrapper {
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+    nav ol {
+        display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .small-screen-disappear {
+        display: none;
+    }
+    #wrapper {
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+    nav ol {
+        display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    text-align: center;
+
+    }
+    
+     ol figure {
+        flex-basis: 100%;
+    
+        padding: 1rem;
+
+    }
+    
+    
+    ol li {
+        flex-basis: 0px;
+        flex-grow: 1;
+       
+    }
+    
+}
+
+
+
+
+
+
+
