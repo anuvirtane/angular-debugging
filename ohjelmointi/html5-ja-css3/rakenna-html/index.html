@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript-harjoitus</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="reset.css">
+   
+</head>
+<body>
+
+
+    <script>
+
+        //ylempi osio
+        document.body.id += "runko";
+        var header = document.createElement("header")
+        header.className = "ylatunniste";
+        var runko = document.getElementById("runko");
+        runko.appendChild(header);
+        var h1 = document.createElement("h1");
+        header.appendChild(h1);
+        h1.id = "otsikko";
+        var p1 = document.createElement("p");
+        header.appendChild(p1);
+        var text1 = document.createTextNode("Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure nesciunt obcaecati cumque itaque provident, hic enim nam qui optio explicabo pariatur exercitationem non ducimus. Dolores inventore nam sapiente facere.")
+        p1.appendChild(text1);
+        var header1 = document.createTextNode("Asetin tämän sivun html-elementit paikoilleen javascriptillä");
+        h1.appendChild(header1);
+
+        //keskiosa
+        var section = document.createElement("section");
+        section.id="rinnakkain";
+        runko.appendChild(section);
+        var p2 = document.createElement("p");
+        section.appendChild(p2);
+        var text2 = document.createTextNode(" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam maiores iste, facilis accusamus harum fugiat aperiam iusto commodi sed totam tempora maxime reiciendis optio voluptatem voluptates sapiente nemo at assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iusto consectetur exercitationem vitae modi magnam aspernatur molestiae nostrum, non impedit illo eveniet sint libero inventore qui ut earum saepe accusantium?")
+        p2.appendChild(text2);
+        var figure = document.createElement("figure");
+        figure.id="kuvanpaikka";
+        section.appendChild(figure);
+        var img = document.createElement("img");
+        img.src = "./images/immortal.jfif";
+        figure.appendChild(img);
+        var figcaption = document.createElement("figcaption");
+        var captiontext = document.createTextNode("The day I did this exercise I thought a lot about Immortal.");
+        figcaption.appendChild(captiontext);
+        figure.appendChild(figcaption); 
+
+        //alaosa
+        var footer = document.createElement("footer");
+        footer.id="alaosa";
+        runko.appendChild(footer);
+        var p3 = document.createElement("p");
+        var text3 = document.createTextNode(" © 2020 Anu Virtanen");
+        footer.appendChild(p3);
+        p3.appendChild(text3);
+ 
+       
+
+        
+    </script>
+    
+</body>
+</html>

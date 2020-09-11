@@ -1,0 +1,43 @@
+
+#runko {
+    background-color: lightpink;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+.ylatunniste, #alaosa {
+    border: dotted black 0.5px;
+}
+
+
+
+#otsikko {
+    font-size: 150%;
+}
+
+.ylatunniste > *, #rinnakkain > *, footer > p {
+    padding: 1rem;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+#rinnakkain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-color: black;
+    border-style: dotted;
+    border-width: 0px 0.5px;
+}
+
+#rinnakkain > * {
+    flex-basis: 0px;
+    flex-grow: 1;
+}
+
+figure figcaption {
+    font-size: 62.5%;
+}
+

@@ -28,6 +28,11 @@ body {
     
 }
 
+nav li a {
+    text-decoration: none;
+   color: black;
+ }  
+
 .some {
     display: flex;
 }
@@ -41,6 +46,10 @@ body {
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+.some li a {
+    color: white;
 }
 
 ul {
