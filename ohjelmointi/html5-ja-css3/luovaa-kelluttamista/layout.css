@@ -1,0 +1,86 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    border: solid #718096 1px;
+    border-radius: 8px;
+    background-color: gainsboro;
+    background-image: linear-gradient(to bottom right, gainsboro, white);
+    padding: 1em;
+}
+
+.container img {
+    max-width: 100%;
+    background-color: white;
+    padding: 5px;
+    border: solid lightgrey 1px;
+    box-shadow: darkgrey 0 3px 3px 0;   
+}
+
+.container .heading h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.container .text p {
+    font-size: 1.3rem;
+    
+}
+
+figure {
+     margin-block-start: 0em; 
+    margin-block-end: 1em;
+     margin-inline-start: 0px; 
+    margin-inline-end: 40px;
+}
+
+  
+
+/* nää on vanhemman grid-säännöt */
+.grid-config { 
+    display: grid; /* grid käyttöön */
+    grid-gap: 1rem; /* grid-solujen välit */
+    grid-template-columns: 25% 75%; /* grid sarakeleveydet */
+    grid-template-rows: auto; /* grid rivikorkeudet */
+    grid-template-areas: /* nimettyjen alueiden sijoittaminen gridiin */
+        "image heading"
+        "place text";
+    margin: 0 1rem 2rem 0;
+}
+/* lapset: annetaan nimet grid-alueille */
+.heading {
+    grid-area: heading;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.image {
+    grid-area: image;
+}
+.text {
+    grid-area: text;
+}
+
+/*reverse-säännöt*/
+
+.reverse {
+
+   grid-template-columns: 75% 25%; 
+
+}
+
+
+.reverse .heading {
+   grid-area: image;
+}
+.reverse .image {
+   grid-area: heading;
+}
+.reverse .text {
+    grid-area: place;
+}
+
+
+
+

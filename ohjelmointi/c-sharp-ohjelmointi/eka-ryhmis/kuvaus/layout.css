@@ -1,0 +1,61 @@
+
+
+body {
+    
+        font-size: 62.5%;
+        font: italic georgia, sans-serif;
+        line-height: 1.88889;
+        color: #555753; 
+        background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
+     
+        
+ 
+}
+
+
+
+h1 {
+    font-size: 2rem;
+    color: #555753;
+    background-color: #D4CDDC;
+    background-image: linear-gradient(to bottom right, #D4CDDC, white); 
+    opacity: 0.6;
+    padding: 1rem;
+}
+
+
+.green {
+    background-color: #B3AE94;
+    background-image: linear-gradient(to top right, #B3AE94, white); 
+    opacity: 0.3;
+}
+
+.green ul {
+	margin: 0;
+
+    text-decoration: none;
+    padding-bottom: 2rem;
+}
+
+.green li a {
+
+	display: block; 
+	padding-top: 5px; 
+ 
+    margin-left: 1rem;
+    list-style-type: none;
+    text-decoration: none;
+	}
+.green li a:link {
+    color: black;
+    
+	}
+.green li a:visited {
+    color: #7647db;
+ 
+    }
+    
+ 
+    li {
+        padding: 1rem;
+    }
