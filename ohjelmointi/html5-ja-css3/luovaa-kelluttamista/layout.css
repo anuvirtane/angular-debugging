@@ -57,7 +57,7 @@ figure {
     grid-template-rows: auto; /* grid rivikorkeudet */
     grid-template-areas: /* nimettyjen alueiden sijoittaminen gridiin */
         "image heading"
-        "place text";
+        "image text";
     margin: 0 1rem 2rem 0;
 }
 /* lapset: annetaan nimet grid-alueille */
@@ -78,20 +78,35 @@ figure {
 .reverse {
 
    grid-template-columns: 75% 25%; 
-
+  
 }
 
 
 .reverse .heading {
    grid-area: image;
+
 }
 .reverse .image {
    grid-area: heading;
 }
 .reverse .text {
-    grid-area: place;
+    margin-top: 3.5rem;
+    grid-area: image;
 }
 
+@media screen and (max-width: 425px) {
+    .main {
+        margin: 0px;
+    }
+
+    .container {
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        min-width: 320px;
+        padding: 10px;
+    }
+}
 
 
 

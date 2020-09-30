@@ -1,0 +1,80 @@
+html {
+    font-size: 200%;
+}
+
+#wrapper {
+    letter-spacing: 0.2em;
+    
+}
+
+#eka {
+    background-color: powderblue;
+    opacity: 0.6;
+    position: absolute;
+    top: 0em;
+    left: 2em;
+    width: 13em;
+    height: 6.29em;
+    animation-name: top-middle;
+    animation-duration: 3s;  
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
+  
+  @keyframes top-middle {
+    from {top: -7em; }
+    to {top: 0em; }
+  }
+
+#toka {
+    background-color: #DBECB5;
+    opacity: 0.5;
+    position: absolute;
+    top: 4em;
+    left: 6em;
+    width: 4em;
+    height: 6.3em;
+    animation-name: left-middle;
+    animation-duration: 4s;  
+    animation-delay: 5s;
+    animation-fill-mode: both;
+}
+
+@keyframes left-middle {
+    from {left: -6em; }
+    to {left: 6em; }
+  }
+
+#kolmas {
+    border: solid orange 0.3em;
+    border-radius: 5px;
+    padding: 1em;
+    padding-bottom: 3em;
+    margin-top: 3em;
+    margin-left: 1em;
+    width: 15em;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#kappale1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#kappale2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: powderblue;
+}
+
+.magenta {
+    background-color: darkorchid;
+    color: white;
+}
+
+figure, p {
+
+}

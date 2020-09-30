@@ -1,0 +1,52 @@
+figure {
+    display: block;
+}
+
+figure img {
+    max-width: 100%
+}
+
+
+.bg-kuva
+{
+   background-image: url("../images/Untitled-1.jpg");
+   background-repeat: no-repeat;
+   background-position: left top;
+   background-size: cover;
+   
+}
+
+.product-device {
+    background-image: url("../images/4.jpg");
+    
+}
+
+.display-4 {
+    z-index: 4;
+}
+
+  
+  @media (max-width: 786px) {
+ 
+
+    .carousel-caption p {
+        color: black;
+    }
+  }
+
+    @media (max-width: 425px) {
+        .carousel-caption h1 {
+          
+            bottom: 400px;
+            color: black;
+        
+           
+            
+        }
+
+        .carousel-caption p {
+            color: black;
+        }
+    }
+  
+

@@ -1,0 +1,50 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+ color: rgb(202, 199, 199);
+ text-transform: lowercase;
+ font-size: 3rem;
+ letter-spacing: 0.5rem;
+ padding: 1.5rem;
+ font-weight: bold;
+}
+
+
+
+#gray {
+    background-color: rgb(202, 199, 199);
+    padding: 1rem;
+}
+
+#gray ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#gray ul li a {
+    padding: 1rem;
+    padding-top: 2rem;
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    flex-basis: 0px;
+    flex-grow: 1;
+    font-weight: bold;
+}
+
+
+img {
+    max-width: 100%;
+    border: solid white 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+p {
+    padding: 1rem;
+    font-size: 1.2rem;
+}

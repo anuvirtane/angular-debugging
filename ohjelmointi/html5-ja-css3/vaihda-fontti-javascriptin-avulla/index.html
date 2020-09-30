@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vaihda fonttikoko Javascriptin avulla</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./layout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./clickHandler.js"></script>
+</head>
+<body>
+    <article id="gray">
+    <h1>Muuta fonttikokoa Javascriptillä</h1>
+    <p>Huom! Kaikki muutokset tapahtuvat Javasciptin avulla.</p>
+    <p>Listan fonttikokoa muutetaan alla olevaa painonappia painamalla. Listan oletusfonttikoko on 16px.</p>
+    <p id="mystery">Mutta mitä tapahtuu, jos painat nappia 10 kertaa?</p>
+    <h2>Tämän listan fonttikoko muuttuu napista painamalla</h2>
+    
+    <ol id="list"><li >Ensimmäinen napin painallus muuttaa fonttikooksi 20px</li>
+    <li >Toinen napin painallus muuttaa fonttikooksi 24px</li>
+<li >Kolmas napin painallus muuttaa fonttikooksi 28px</li>
+<li >Neljäs napin painallus muuttaa fonttikooksi 32px</li>
+<li >Viides napin painallus palauttaa fonttikoon 16px</li></ol>
+
+<button id="button" onClick="clickHandler(); return false;">Fontin koko</button>
+<p id="buttonPress">Napinpainalluskertoja yhteensä: <span id="showClicks">0</span> </p>
+
+</article>
+</body>
+</html>
