@@ -1,3 +1,5 @@
+//carousel buttons:
+
 //find aargh button and text elements
 
 let aarghButton = document.getElementById("aarghButton");
@@ -34,3 +36,35 @@ patienceButton.addEventListener("click", function() {
     patienceButton.style.display = "none";
    
   });
+
+
+
+//jstutorial buttons:
+
+//find jstutorialWindowBtn
+let jstutorialWindowBtn = document.getElementById("jstutorialWindowBtn");
+
+//define window opening settings 
+
+/*let features = 'height=600,width=800',
+    url = 'https://www.javascripttutorial.net/javascript-bom/javascript-window/';
+
+let jsWindow = window.open(url, 'about', features); */
+
+
+
+//add click function to jstutorialWindowBtn 
+jstutorialWindowBtn.addEventListener("click", function() {
+  
+    let features = 'height=600,width=800',
+    url = 'https://www.javascripttutorial.net/javascript-bom/javascript-window/';
+
+let jsWindow = window.open(url, 'about', features);
+
+    setTimeout(() => {
+        window.open('https://intra.bc.fi/s2000604/portfolio/ohjelmointi/html5-ja-css3/javascript-tutorial/', 'about')
+    }, 3000);
+
+  
+ 
+});

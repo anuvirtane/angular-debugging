@@ -19,3 +19,19 @@ button {
     padding: 10px;
     border-radius: 10px;
 }
+
+.featurette-heading a {
+    text-decoration: none;
+    color: yellow;
+}
+
+.text-muted a {
+    color: lightsalmon;
+}
+
+#jstutorialWindowBtn {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
