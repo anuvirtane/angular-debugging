@@ -1,0 +1,21 @@
+.carousel-caption {
+    
+    font-style: bold;
+   
+}
+
+.carousel-caption h1 {
+    font-size: 4em;
+    font-style: bold;
+}
+
+.carousel-control-prev-icon {
+    size: 3rem;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
