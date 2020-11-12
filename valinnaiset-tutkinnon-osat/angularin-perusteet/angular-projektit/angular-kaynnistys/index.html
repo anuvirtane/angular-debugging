@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Angular-projektin käynnistyessä...</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+     
+      <a class="navbar-brand" href="#">Miten Angular-projekti käynnistää itsensä?</a>
+    </div>
+  
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Angular-projektiin tulee paljon tiedostoja.</h3>
+  <img src="images/pallokuva-tiedostot.png" class="img-responsive img-circle margin" style="display:inline" alt="main.ts:ssä kutsutaan AppModulea" width="450" height="450">
+  <h3>Vanha tuttu index.html näyttää turvalliselta, mutta ei ole projektin alkupiste.</h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Projekti koostuu moduuleista ja komponenteista, jotka on yhdistetty toisiinsa.</h3>
+  <p>Komponentti koostuu neljästä tiedostosta.</p>
+  <img src="images/neljas-komponentin-tiedostot.png" class="img-responsive img-circle margin" style="display:inline" alt="main.ts:ssä kutsutaan AppModulea" width="450" height="450">
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Projektin käynnistys</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Kaikki alkaa main.ts -tiedostossa. Se on TypeScript-tiedosto, jossa kutsutaan AppModulea. Tiedostossa näkyy myös TypeScriptin import-komentoja, jolla tuodaan käyttöön muualla määriteltyjä funktioita.</p>
+      <img src="images/eka-main-ts-app-module.png" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>AppModule tuodaan TypeScriptin export-komennolla käyttöön projektin muihin osiin app.module.ts -tiedostossa. AppModulelle ei tarvita erillistä import-komentoa.</p>
+      <img src="images/toka-app-module-ts.png" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Se, mitä näkyy projektissa, määritellään app.component.ts -tiedostossa. selector on sama asia kuin html-tägi, ja templateUrl kertoo, missä projektin tiedostossa näkyy sen sisältö.</p>
+      <img src="images/kolmas-app-component-ts.png" class="img-responsive margin" style="width:100%" alt="Image">
+    
+    </div>
+  </div>
+  
+</div>
+
+<div class="container-fluid bg-1 text-center">
+    <h3 class="margin">Nyt pitäisi siis mennä app.component.html -tiedostoon, jos haluaisi muuttaa näkymää kuten html-tiedostoissa tehdään.</h3>
+    <img src="images/viides-app-component-html.png" class="img-responsive margin" style="display:inline" alt="app.component.html on tuttua html:ää" width="450" height="450">
+   
+  </div>
+
+  <div class="container-fluid bg-2 text-center">
+    <h3 class="margin">Ja mistä se selector eli app-root-niminen tägi löytyy? Vanhasta kaverista, index.html:stä.</p>
+        <img src="images/kuudes-index-html.png" class="img-responsive margin" style="display:inline" alt="index.html:ssä näkyy app-root-tagi eli selector" width="450" height="450">
+    </div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Bootstrap Theme Originally Made By <a href="https://www.w3schools.com">www.w3schools.com</a> and modified by Anu Virtanen</p> 
+</footer>
+
+</body>
+</html>
