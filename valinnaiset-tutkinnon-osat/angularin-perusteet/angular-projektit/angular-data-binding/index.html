@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Jekyll v4.1.1">
+        <title>Album example · Bootstrap</title>
+    
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+    
+        <!-- Bootstrap core CSS -->
+    <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+  
+    <link rel="stylesheet" href="bootstrap.min.css">
+    
+    <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#563d7c">
+    
+    
+        <style>
+          .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+          }
+
+          ol li{
+              list-style: disc;
+          }
+    
+          @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+              font-size: 3.5rem;
+            }
+          }
+        </style>
+        <!-- Custom styles for this template -->
+        <link href="album.css" rel="stylesheet">
+      <script data-dapp-detection="">(function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){return window.__disableDappDetectionInsertion||n(),t}})}})();</script></head>
+    <title>Data Binding Angularissa</title>
+</head>
+<body cz-shortcut-listen="true">
+    <header>
+
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+ 
+        <strong>Data Binding Angularissa</strong>
+      </a>
+      
+    </div>
+  </div>
+</header>
+
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1>Data Binding vaikuttaa DOMiin</h1>
+      <p class="lead text-muted">Aloitetaan karusti yksinkertaistaen ajattelemalla, että data binding on tapa muuttaa vaikkapa jonkin elementin sisältöä DOMissa (Document Object Model).</p>
+      <p>
+        <a href="#" class="btn btn-primary my-2" id="ok">Ok, aloitetaan siitä</a>
+        <a href="#" class="btn btn-secondary my-2" id="notOk">Liian yksinkertaistettua</a>
+      </p>
+    </div>
+  </section>
+  <section class="jumbotron text-center bg-dark">
+    <div class="container">
+      <p class="lead text-muted">Data Bindingin voi jakaa karkeasti kolmeen alalajiin sen perusteella, mihin suuntaan tietoa ohjataan:</p>
+      <ol class="lead text-muted">
+          <li>  <em> Source-to-view</em> (yhdensuuntainen, ohjelmalta käyttäjälle)</li>
+          <li> <em>View-to-source</em> (yhdensuuntainen, käyttäjältä ohjelmaan)
+              
+          </li>
+          <li><em>View-to-source-to-view</em> (kahdensuuntainen, käyttäjältä ohjelmaan ja takaisin)</li>
+      </ol>
+      <br>
+      <br>
+     
+    </div>
+  <section class="jumbotron text-center">
+    <div class="container">
+      <p class="lead text-muted">Tässä oppimistehtävässä olen poiminut tekemistäni Angular-harjoituksista yhden esimerkin jokaisesta eri Data Bindingin alalajista. Alla näet kolme screenshotia koodista sekä erittelyn siitä, mitä Data Bindingilla tehdään näissä tapauksissa.</p>
+     
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            
+            <img src ="images/eka-string-interpolation.png" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><title>String interpolation</title><rect width="100%" height="100%"></rect></img>
+            <div class="card-body">
+                <h3>Interpolation</h3>
+              <p class="card-text">Tuplakiekurasulkujen väliin kirjoitettuna {{ jotain, jonka sisältö on määritelty muualla }} näytetään tässä tapauksessa html-komponentin elementin sisältönä (innerHTML). </p>
+              <div class="d-flex justify-content-between align-items-center">
+                
+                <small class="text-muted">Alalaji: source-to-view</small>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            
+            <img src ="images/toka-event.png" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><title>Event</title><rect width="100%" height="100%"></rect></img>
+            <div class="card-body">
+                <h3>Event</h3>
+              <p class="card-text">(Sulkuihin kirjoitettu tapahtuma), tässä tapauksessa käyttäjän klikkaus, kutsuu funktiota, joka on määritelty muualla.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                
+                <small class="text-muted">Alalaji: view-to-source</small>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            
+            <img src ="images/kolmas-banana-box.png" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><title>Bananas in box</title><rect width="100%" height="100%"></rect></img>
+            <div class="card-body">
+                <h3>Two-way</h3>
+              <p class="card-text">[(Banaanilaatikkoon asetettu Angular directive)] lähettää tässä tapauksessa käyttäjältä saadun merkkijonon ohjelmalle, joka laittaa sen sinne, missä {{ tuplakiekurasulut ovat }}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                
+                <small class="text-muted">Alalaji: view-to-source-to-view</small>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Sivun alkuun</a>
+    </p>
+    <p>Sivun muokannut Anu Virtanen © Bootstrap Album examplen pohjalta</p>
+    <p><a href="https://getbootstrap.com/">Bootstrapin nettisivu</a></p>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      <script src="buttons.js"></script>
+
+</body>
+</html>
